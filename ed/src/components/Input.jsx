@@ -9,7 +9,7 @@ class Texter extends Component {
         super(props);
         this.state = {  
             value: '',
-            secondValue: ''
+           encryptAPI: "http://localhost:5000/encrypt?str="
     
     };
 
@@ -31,10 +31,15 @@ class Texter extends Component {
       }
 
     render() { 
+      const encryptAPI = 'http://localhost:5000/encrypt?str=';
+      const decryptAPI ='http://localhost:5000/decrypt?str=';
         return ( 
         <div>
-            
-       <Navvy />
+          <Navvy />
+             <Requests value = {this.state.encryptAPI}/> 
+
+             <Requests value = {this.state.value}/> 
+       {/* <Navvy />
         <div className="form-group ">
         <div className="row">
         <div className = "col green-border-focus">
@@ -48,7 +53,7 @@ class Texter extends Component {
     <textarea className="form-control" id="exampleTextarea" rows="7" value={this.state.value} onChange={this.handleChange}></textarea>
   </div>
   </div>
-  </div>
+  </div> */}
             
         </div>
          );
