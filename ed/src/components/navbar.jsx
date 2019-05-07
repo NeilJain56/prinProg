@@ -1,26 +1,27 @@
 import React, { Component } from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 //import logo from './logo.svg';
+import './navbar.css';
+
+const navStyle = {
+    backgroundColor: 'rgba(52,52,52,.5)'
+} 
+
 class Navvy extends Component {
     
     render() { 
         return ( 
             <div>
-             <Navbar bg="light">
+               
+             <nav className="navbar navbar-expand-lg navbar-dark" style={navStyle}>
 
-                <Navbar.Brand href="#home">
-                <img
-        src="./logo.svg"
-        width="30"
-        height="30"
-        className="d-inline-block align-top"
-        alt=""
-      />
+            <a className="navbar-brand" href="#"> 
+            <img src='./shield.svg' width="30" height="30" class="d-inline-block align-top" alt=""></img>
+    
+             N_n_N   </a>
+            </nav>
+            </div>
                 
-                NnN Encoder
-                </Navbar.Brand>
-            </Navbar>
-                </div>
 
          );
     }

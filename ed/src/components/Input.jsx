@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Navvy from "./navbar";
 
 import Requests from './requests';
+import './input.css'
 
 
 class Texter extends Component {
@@ -36,9 +37,24 @@ class Texter extends Component {
         return ( 
         <div>
           <Navvy />
-             <Requests value = {this.state.encryptAPI}/> 
 
+          <div className="centerr">
+          <h1>Caesar Cypher</h1>
+          </div>
+          
+          <div className="container">
+          
+          <div className="row">
+            <div className="col">
+             <Requests value = {this.state.encryptAPI}/> 
+             </div>
+
+            <div className="col">
              <Requests value = {this.state.value}/> 
+             </div>
+            </div>
+
+             </div>
        {/* <Navvy />
         <div className="form-group ">
         <div className="row">
