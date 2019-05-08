@@ -10,7 +10,8 @@ class Texter extends Component {
         super(props);
         this.state = {  
             value: '',
-           encryptAPI: "http://localhost:5000/encrypt?str="
+           encryptAPI: "http://localhost:5000/encrypt"+this.props.which+"?str=",
+           decryptAPI: "http://localhost:5000/decrypt"+this.props.which+"?str="
     
     };
 
@@ -36,12 +37,12 @@ class Texter extends Component {
       const decryptAPI ='http://localhost:5000/decrypt?str=';
         return ( 
         <div>
-          <Navvy />
+          
 
           <div className="centerr">
-          <h1>Caesar Cypher</h1>
+          <h1>{this.props.name}</h1>
           </div>
-          
+
           <div className="container">
           
           <div className="row">
@@ -50,7 +51,7 @@ class Texter extends Component {
              </div>
 
             <div className="col">
-             <Requests value = {this.state.value}/> 
+             <Requests value = {this.state.decryptAPI}/> 
              </div>
             </div>
 

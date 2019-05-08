@@ -9,7 +9,9 @@
     "jquery": "^3.4.1",
     "react": "^16.8.6",
     "react-bootstrap": "^1.0.0-beta.8",
+    "react-custom-scrollbars": "^4.2.1",
     "react-dom": "^16.8.6",
+    "react-loading-screen": "0.0.17",
     "react-scripts": "3.0.0",
     "request": "^2.88.0"
   },

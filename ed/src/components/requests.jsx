@@ -29,7 +29,7 @@ handleChange(event) {
         
         console.log("Function called this.state.requestValue ", this.state.requestValue)
         
-        axios.get('http://localhost:5000/encrypt?str='+this.state.requestValue)
+        axios.get(this.props.value+this.state.requestValue)
             .then(response => this.setState({resultValue : response.data}))
             //.then(response => console.log(response.data))
             .catch(response => console.log("Can’t access  response. Blocked by browser?", response))

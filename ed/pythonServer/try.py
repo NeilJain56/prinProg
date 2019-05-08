@@ -26,6 +26,30 @@ def encrypt():
 	return baseString
 	#return '''Woohoo'''
 
+@app.route('/decrypt')
+@cross_origin(origin='localhost',headers=['Content- Type','Authorization'])
+def decrypt():
+	baseString = request.args.get('str') # is no data sent this will return null
+	print('string received is ', baseString)
+	return baseString
+	#return '''Woohoo'''
+
+@app.route('/encrypt1')
+@cross_origin(origin='localhost',headers=['Content- Type','Authorization'])
+def encrypt1():
+	baseString = request.args.get('str') # is no data sent this will return null
+	print('string received is ', baseString)
+	return baseString
+	#return '''Woohoo'''
+
+@app.route('/decrypt1')
+@cross_origin(origin='localhost',headers=['Content- Type','Authorization'])
+def decrypt1():
+	baseString = request.args.get('str') # is no data sent this will return null
+	print('string received is ', baseString)
+	return baseString
+	#return '''Woohoo'''
+
 if __name__ == '__main__':
 	# run!
 	app.run()
