@@ -10,8 +10,11 @@ class Complete extends Component {
         none: '',
         one: '1',
         two: '2',
-        name: 'Caesar Cypher',
-        name2: 'Normal Encryption',
+        three: '3',
+        name: 'Brutus: (Caesar Cypher)',
+        name2: 'Anna: (Reverse Encryption)',
+        name3: 'Phil: (Custom Encryption)',
+        name4: 'Steve-o: (Special Encryption)',
         bool: true,
         counter: 0
      }
@@ -36,6 +39,9 @@ class Complete extends Component {
                 <Navvy />
             <Texter which = {this.state.none} name = {this.state.name}/>
             <Texter which = {this.state.one} name = {this.state.name2} />
+            <Texter which = {this.state.two} name = {this.state.name3} />
+            <Texter which = {this.state.three} name = {this.state.name4} />
+            
             
             </div>
 
