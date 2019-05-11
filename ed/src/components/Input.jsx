@@ -10,8 +10,8 @@ class Texter extends Component {
         super(props);
         this.state = {  
             value: '',
-           encryptAPI: "http://localhost:5000/encrypt"+this.props.which+"?str=",
-           decryptAPI: "http://localhost:5000/decrypt"+this.props.which+"?str="
+           encryptAPI: "https://safe-anchorage-46363.herokuapp.com/encrypt"+this.props.which+"?str=",
+           decryptAPI: "https://safe-anchorage-46363.herokuapp.com/decrypt"+this.props.which+"?str="
     
     };
 
